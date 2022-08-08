@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  height: 90px;
+  background-color: rgb(242, 242, 242);
+}
+.header-content {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#logo {
+  width: 90px;
+  background: transparent;
+}
+.logo {
+  background: transparent;
+}
+.header-content nav {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 90px;
+  text-align: center;
+  width: 50%;
+  gap: 70px;
+}
+.header-content nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-shadow: 1px 1px gray;
+}
+a:hover {
+  border-bottom: 1px solid black;
+}
+.languages {
+  display: flex;
+  gap: 10px;
+}
+.languages-icons {
+  width: 30px;
+  height: 20px;
+}
+.languages-icons:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+.aze {
+  background-image: url(flags/Flag_of_Azerbaijan.svg);
+  background-size: 100% 100%;
+}
+.rus {
+  background-image: url(flags/Flag_of_Russia.svg.png);
+  background-size: 100% 100%;
+}
+.eng {
+  background-image: url(flags/1200px-Flag_of_the_United_States.svg.png);
+  background-size: 100% 100%;
+}
+
+.main-photo {
+  width: 100%;
+  height: 500px;
+  border: 1px solid black;
+  background-image: url(pics/contactus.jpg);
+  background-size: 100% 100%;
+}
+.main-photo div {
+  margin-top: 100px;
+  margin-left: 300px;
+}
+.main-photo div h1 {
+  color: white;
+  font-size: 90px;
+  text-shadow: 2px 2px black;
+}
+.main-photo div p {
+  color: white;
+  font-size: 60px;
+  text-shadow: 2px 2px black;
+}
+.data {
+  width: 1440px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.social p {
+  font-size: 30px;
+  font-weight: 600;
+}
+.social p.call {
+  font-size: 50px;
+  font-weight: 600;
+}
+.contact {
+  font-size: 40px;
+}
+.contact h2 {
+  margin-bottom: 30px;
+}
+.contact p {
+  font-size: 30px;
+}
+.secondp {
+  margin-top: 20px;
+}

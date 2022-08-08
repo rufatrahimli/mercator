@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  height: 90px;
+  background-color: rgb(242, 242, 242);
+}
+.header-content {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#logo {
+  width: 90px;
+  background: transparent;
+}
+.logo {
+  background: transparent;
+}
+.header-content nav {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 90px;
+  text-align: center;
+  width: 720px;
+  gap: 70px;
+}
+.header-content nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-shadow: 1px 1px gray;
+}
+a:hover {
+  border-bottom: 1px solid black;
+  
+}
+.languages {
+  display: flex;
+  gap: 10px;
+}
+.languages-icons {
+  width: 30px;
+  height: 20px;
+}
+.languages-icons:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+.aze {
+  background-image: url(flags/Flag_of_Azerbaijan.svg);
+  background-size: 100% 100%;
+}
+.rus {
+  background-image: url(flags/Flag_of_Russia.svg.png);
+  background-size: 100% 100%;
+}
+.eng {
+  background-image: url(flags/1200px-Flag_of_the_United_States.svg.png);
+  background-size: 100% 100%;
+}
+
+
+
+.transportation {
+  height: 700px;
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.transport-types {
+  height: 650px;
+  width: 300px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+  text-shadow: 1px 1px black;
+  padding: 10px;
+}
+.transport-types:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+#type-1 {
+  background-image: url(vertical.pics/06.jpg);
+  background-size: 100% 100%;
+}
+#type-2 {
+  background-image: url(vertical.pics/1.jpg);
+  background-size: 100% 100%;
+  margin-top: 40px;
+}
+#type-3 {
+  background-image: url(vertical.pics/Rail-freigh-prin.jpg);
+  background-size: 100% 100%;
+}
+#type-4 {
+  background-image: url(vertical.pics/Ocean-freightprin.jpg);
+  background-size: 100% 100%;
+  margin-top: 40px;
+}
+
+.about-us {
+  display: flex;
+  width: 100%;
+  background-color: rgb(241, 241, 247);
+  padding: 30px;
+  height: 200px;
+}
+#aboutus {
+  font-size: 30px;
+  text-align: center;
+}
+.merc {
+  font-weight: 600;
+}
+
+#first {
+  display: block;
+  background-image: url(pics/10-Best-Private-Auto-Transport-Companies-for-2020.jpg);
+  width: 100%;
+}
+
+#second {
+  display: block;
+  background-image: url(pics/10-Best-Private-Auto-Transport-Companies-for-2020.jpg);
+  width: 100%;
+}
+#third {
+  display: block;
+  background-image: url(pics/10-Best-Private-Auto-Transport-Companies-for-2020.jpg);
+  width: 100%;
+}
+
+#services a {
+  text-decoration: none;
+  border: none;
+}
+
+.carousel-wrapper {
+  height: 600px;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.arrow-prev {
+  left: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  right: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .arrow,
+  .light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+
+/*Select every element*/
+[id^="item"] {
+  display: none;
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url(pics/asd.jpg);
+  background-size: cover;
+}
+.item-2 {
+  background: url(pics/banner.jpg);
+  background-size: cover;
+}
+.item-3 {
+  background: url(pics/12.png);
+  background-size: cover;
+}
+
+*:target ~ .item-1 {
+  opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+.carousel-item h2 {
+  display: block;
+  font-size: 80px;
+  text-shadow: 2px 2px black;
+  color: white;
+}
+.carousel-item p {
+  color: white;
+  font-size: 40px;
+  display: block;
+  text-shadow: 2px 2px black;
+}
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

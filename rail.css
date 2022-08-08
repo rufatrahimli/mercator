@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  height: 90px;
+  background-color: rgb(242, 242, 242);
+}
+.header-content {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#logo {
+  width: 90px;
+  background: transparent;
+}
+.logo {
+  background: transparent;
+}
+.header-content nav {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 90px;
+  text-align: center;
+  width: 50%;
+  gap: 70px;
+}
+.header-content nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-shadow: 1px 1px gray;
+}
+a:hover {
+  border-bottom: 1px solid black;
+}
+.languages {
+  display: flex;
+  gap: 10px;
+}
+.languages-icons {
+  width: 30px;
+  height: 20px;
+}
+.languages-icons:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+.aze {
+  background-image: url(flags/Flag_of_Azerbaijan.svg);
+  background-size: 100% 100%;
+}
+.rus {
+  background-image: url(flags/Flag_of_Russia.svg.png);
+  background-size: 100% 100%;
+}
+.eng {
+  background-image: url(flags/1200px-Flag_of_the_United_States.svg.png);
+  background-size: 100% 100%;
+}
+
+.main-photo {
+  width: 100%;
+  height: 500px;
+  border: 1px solid black;
+  background-image: url(pics/A-series-of-railway-freight-wagons.jpg);
+  background-size: 100% 100%;
+}
+
+.main-photo p {
+  color: white;
+  width: max-content;
+  font-size: 30px;
+  margin-left: 315px;
+  margin-top: 150px;
+  font-weight: 800;
+  text-shadow: 2px 2px black;
+}
+.main-photo h1 {
+  margin-left: 300px;
+  color: white;
+  font-size: 90px;
+  width: max-content;
+  font-weight: 800;
+  text-shadow: 2px 2px black;
+}
+.info {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.left {
+  width: 700px;
+  font-size: 30px;
+}
+.rigth {
+  font-size: 30px;
+  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+.rigth ul li {
+  margin-top: 50px;
+  font-size: 20px;
+}
+.pink {
+  color: #eb1272;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+.left h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 80px;
+}
+.kompl {
+  color: #1a2a57;
+  margin-bottom: 50px;
+}
+.small {
+  font-size: 20px;
+  color: #1a2a57;
+}
+.rigth ul li:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.services {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+.text-box {
+  width: 700px;
+  font-size: 30px;
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  color: #1a2a57;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.text2 {
+  font-size: 30px;
+  line-height: 32px;
+  color: #1a2a57;
+}
